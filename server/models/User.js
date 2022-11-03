@@ -6,33 +6,29 @@ const userSchema = new Schema({
     type: Schema.Types.ObjectId,
     default: () => new Types.ObjectId(),
   },
-  username: {
+  userName: {
     type: String,
     required: true,
     unique: true,
     trim: true,
   },
-  email: {
+  userEmail: {
     type: String,
     required: true,
     unique: true,
     match: [/.+@.+\..+/, 'Must match an email address!'],
   },
-  password: {
+  userPassword: {
     type: String,
     required: true,
     minlength: 5,
   },
-  employer: {
-    type: Boolean,
-    required: true,
-  },
-  description: {
+  userDescription: {
     type: String,
     required: true,
     minlength: 500,
   },
-  location: {
+  userLocation: {
     type: String,
     minlength: 100,
     required: true,
@@ -42,14 +38,14 @@ const userSchema = new Schema({
 userSchema.pre('save', async function (next) {
   if (this.isNew || this.isModified('password')) {
     const saltRounds = 10;
-    this.password = await bcrypt.hash(this.password, saltRounds);
+    this.userPassword = await bcrypt.hash(this.userPassword, saltRounds);
   }
 
   next();
 });
 
-userSchema.methods.isCorrectPassword = async function (password) {
-  return bcrypt.compare(password, this.password);
+userSchema.methods.isCorrectPassword = async function (userPassword) {
+  return bcrypt.compare(userPassword, this.userPassword);
 };
 
 const User = model('User', userSchema);
