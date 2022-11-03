@@ -65,7 +65,7 @@ const resolvers = {
       const token = signToken(employer);
       return { token, employer };
     },
-    login: async (parent, { employerEmail, userPassword }) => {
+    login: async (parent, { employerEmail, employerPassword }) => {
       const employer = await Employer.findOne({ employerEmail });
 
       if (!employer) {
