@@ -1,11 +1,8 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, Mongoose } = require('mongoose');
 const bcrypt = require('bcrypt');
 
 const userSchema = new Schema({
-  userId: {
-    type: Schema.Types.ObjectId,
-    default: () => new Types.ObjectId(),
-  },
+
   userName: {
     type: String,
     required: true,
@@ -26,11 +23,11 @@ const userSchema = new Schema({
   userDescription: {
     type: String,
     required: true,
-    minlength: 500,
+    minlength: 10,
   },
   userLocation: {
     type: String,
-    minlength: 100,
+ 
     required: true,
   }
 });
