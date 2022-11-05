@@ -1,0 +1,9 @@
+[
+   {
+    "userName": "John Doe",
+    "userEmail": "jDoe@email.com",
+    "userPassword": "passWord01",
+    "userDescription": "Guy who wants to get a job in computer science but has no in field experience. Fresh out of a attaining a Masters degree in Computer Science.",
+    "userLocation": "Idaho"
+   }
+]

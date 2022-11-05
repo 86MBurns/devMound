@@ -2,10 +2,7 @@ const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
 const employerSchema = new Schema({
-    employerId:{
-        type: Schema.Types.ObjectId,
-    default: () => new Types.ObjectId(),
-    },
+
     employerName: {
         type: String,
         required: true,
@@ -26,13 +23,18 @@ const employerSchema = new Schema({
       employerDescription: {
         type: String,
         required: true,
-        minlength: 500,
+        minlength: 10,
       },
       employerLocation: {
         type: String,
-        minlength: 100,
         required: true,
-      }
+      },
+      jobs: [
+        {
+          type: Schema.Types.String,
+          ref: 'Jobs',
+        },
+      ]
 });
 
 employerSchema.pre('save', async function (next) {
