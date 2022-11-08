@@ -1,6 +1,5 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-const Employer = require('./Employer')
 
 const jobsSchema = new Schema({
 
