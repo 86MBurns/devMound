@@ -12,6 +12,8 @@ import Home from '';
 import Signup from '';
 import Login from '';
 import Profile from '';
+import Header from '';
+import Footer from '';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
