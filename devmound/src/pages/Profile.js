@@ -14,7 +14,8 @@ import {
   MDBProgressBar,
   MDBIcon,
   MDBListGroup,
-  MDBListGroupItem
+  MDBListGroupItem,
+  const MyUploadButton
 } from 'mdb-react-ui-kit';
 
 export default function ProfilePage() {
@@ -48,8 +49,8 @@ export default function ProfilePage() {
                 <p className="text-muted mb-1">Full Stack Developer</p>
                 <p className="text-muted mb-4">Bay Area, San Francisco, CA</p>
                 <div className="d-flex justify-content-center mb-2">
-                  <MDBBtn>Follow</MDBBtn>
-                  <MDBBtn outline className="ms-1">Message</MDBBtn>
+                  <MDBBtn>const MyUploadButton</MDBBtn>
+                  <MDBBtn outline className="ms-1">const MyUploadButton</MDBBtn>
                 </div>
               </MDBCardBody>
             </MDBCard>
