@@ -6,7 +6,6 @@ const userTypeDefs = gql`
     userName: String
     UserEmail: String
     userPassword: String
-    isEmployer: Boolean 
   }
   type Auth {
     token: ID!
@@ -18,12 +17,9 @@ const userTypeDefs = gql`
     me: User
   }
   type Mutation {
-    addUser(userName: String!, userEmail: String!, userPassword: String!, isEmployer: Boolean): Auth
+    addUser(userName: String!, userEmail: String!, userPassword: String!): Auth
     login(userEmail: String!, userPassword: String!): Auth
   }
-
-
-
 `;
 
 module.exports = userTypeDefs;

@@ -19,8 +19,6 @@ New devs may have trouble finding a job entering the field of web development an
 * [Matt Burns](https://github.com/FrankFrackle)
 * [Andrew Ensor](https://github.com/a-ens)
 * [Britania Moreno](https://github.com/BriMoreno)
-* [Manny Sangha](https://github.com/mannysangha1)
-* [Andres Covas](https://github.com/Cinosargo22)
 
 ## Acknowledgments
 * libraries used, useful info used in making the site, works cited

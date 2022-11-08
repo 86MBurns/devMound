@@ -1,33 +1,25 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-const Employer = require('./Employer')
+const User = require('./User')
 
 const jobsSchema = new Schema({
-
-      title: {
-        type: String,
-        minlength: 10,
-        required: true,
+    jobId: {
+        type: Schema.Types.ObjectId,
+        default: () => new Types.ObjectId(),
       },
+      location: [User],
 
       description: {
         type: String,
-        minlength: 50,
+        minlength: 500,
         required: true,
       },
-      requirements: {
-        type: String,
-        minlength: 30,
-        required: true,
-      },
-
-      employer: {    
-        type: Schema.Types.String,
-        ref: 'Employer',
-      },
+      
+      employer: [User],
 
       type: {
         type:String,
+        minlength: 50,
         required: true,
       }
 })
