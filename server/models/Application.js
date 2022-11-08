@@ -1,18 +1,23 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-const User = require('./User');
-const Jobs = require('./Jobs');
 
 const applicationSchema = new Schema({
-    applicant: [User],
-    employer: [User],
-    location: [User],
-    jobId: [Jobs],
+    applicant: {    
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+      },
+    employer: {    
+        type: Schema.Types.ObjectId,
+        ref: 'Employer',
+      },
+    jobId: {
+        type: Schema.Types.ObjectId,
+        ref: 'Jobs'
+    },
     gitHub: {
         type: String,
         required: true,
     },
-
 })
 
 const Application = model('Application', applicationSchema);
