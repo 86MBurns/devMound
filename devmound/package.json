@@ -10,6 +10,7 @@
     "bootstrap": "^5.2.2",
     "graphql": "^16.6.0",
     "jwt-decode": "^3.1.2",
+    "mdb-react-ui-kit": "^5.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
