@@ -1,6 +1,6 @@
-const userTypeDefs = require('./userTypeDefs');
+const typeDefs = require('./userTypeDefs');
 const resolvers = require('./resolvers');
 
-module.exports = { userTypeDefs, resolvers };
+module.exports = { typeDefs, resolvers };
 
 
