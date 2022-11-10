@@ -13,11 +13,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-import Profile from './pages/Profile';
+import ProfilePage from './pages/Profile';
 
-import Header from './components/Header/oldHeader'
+import Header from './components/Header/newHeader'
 import Footer from './components/Footer/footer'
-import NewHeader from './components/Header/newHeader'
 
 
 // Construct our main GraphQL API endpoint
@@ -49,7 +48,7 @@ function App() {
         <ApolloProvider client={client}>
             <Router>
                 <div className="flex-colum justify-flex-start min-100-vh">
-                    <NewHeader />
+                    <Header />
                     <div className="container">
                         <Routes>
                             <Route
@@ -66,7 +65,7 @@ function App() {
                             />
                             <Route
                             path="/profile"
-                            element={<Profile />}
+                            element={<ProfilePage />}
                             />
 
                         </Routes>

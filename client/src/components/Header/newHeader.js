@@ -16,7 +16,7 @@ const NewHeader = () => {
       <Navbar bg="danger" variant="dark">
         <Container>
           <div className="container flex-row justify-space-between-lg justify-center align-center">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="">
               <img
                 alt="devMound Logo"
                 src="../../../ant-cartoon.ico"
