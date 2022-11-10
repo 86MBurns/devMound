@@ -15,9 +15,9 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 
-import Header from './components/Header/index'
-import Footer from './components/Footer/index'
-import NewHeader from './components/bootstrapNav/index'
+import Header from './components/Header/oldHeader'
+import Footer from './components/Footer/footer'
+import NewHeader from './components/Header/newHeader'
 
 
 // Construct our main GraphQL API endpoint

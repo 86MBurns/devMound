@@ -27,7 +27,7 @@ const NewHeader = () => {
               devMound
             </Navbar.Brand>
 
-            <div className='align-right'>
+            <div className='align-right justify-right'>
               {Auth.loggedIn() ? (
                 <>
                   <Link className="btn btn-lg btn-info m-2" to="/me">

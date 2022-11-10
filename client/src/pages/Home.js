@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import Header from '../components/Header';
+import Header from '../components/Header/oldHeader';
 
 
 // import { QUERY_THOUGHTS } from '../utils/queries';
