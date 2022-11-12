@@ -1,6 +1,14 @@
 const { gql } = require('apollo-server-express');
 
 const userTypeDefs = gql`
+type Employer {
+    employerName: String
+    employerEmail: String
+    employerPassword: String
+    employerDescription: String
+    employerLocation: String
+    jobs:Schema.type.String
+  }
   type User {
     _userId: ID
     userName: String
@@ -13,6 +21,9 @@ const userTypeDefs = gql`
     user: User
   }
   type Query {
+    employers:[Employer]
+    employer(employerName:String!)
+    meEmployer: Employer
     users: [User]
     user(userName: String!): User
     me: User
@@ -21,8 +32,6 @@ const userTypeDefs = gql`
     addUser(userName: String!, userEmail: String!, userPassword: String!, isEmployer: Boolean): Auth
     login(userEmail: String!, userPassword: String!): Auth
   }
-
-
 
 `;
 
