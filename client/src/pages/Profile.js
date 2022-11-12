@@ -43,8 +43,8 @@ const ProfilePage = () => {
                 <p class="text-muted mb-1">Full Stack Developer</p>
                 <p className="text-muted mb-4">Bay Area, San Francisco, CA</p>
                 <div className="d-flex justify-content-center mb-2">
-                  <MDBBtn><a href="./client/src/utils/uploadResume.js" a></a>Upload Resumé</MDBBtn>
-                  <MDBBtn><a href="C:\Users\cinos\Documents\devMound\server\config\profileserve.js" a></a>Upload Picture</MDBBtn>
+                  <MDBBtn><a href="C:\Users\cinos\Documents\devMound\server\config\profileserver.js" a></a>Upload Resumé</MDBBtn>
+                  <MDBBtn><a href="C:\Users\cinos\Documents\devMound\server\config\profileserver.js" a></a>Upload Picture</MDBBtn>
                 </div>
               </MDBCardBody>
             </MDBCard>
@@ -84,7 +84,11 @@ const ProfilePage = () => {
                     <MDBCardText>Full Name</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">Johnatan Smith</MDBCardText>
+                  <textarea class="col-md-10 description" spellcheck="false" data-ms-editor="true"></textarea>
+                  <button class="btn saveBtn col-md-10"><MDBBtn>Save</MDBBtn><i class="fas fa-save"></i></button>
+                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"></i>
                   </MDBCol>
                 </MDBRow>
                 <hr />
@@ -93,7 +97,11 @@ const ProfilePage = () => {
                     <MDBCardText>Email</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">example@example.com</MDBCardText>
+                  <textarea class="col-md-10 description" spellcheck="false" data-ms-editor="true"></textarea>
+                  <button class="btn saveBtn col-md-10"><MDBBtn>Save</MDBBtn><i class="fas fa-save"></i></button>
+                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"></i>
                   </MDBCol>
                 </MDBRow>
                 <hr />
@@ -102,7 +110,11 @@ const ProfilePage = () => {
                     <MDBCardText>Phone</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">(097) 234-5678</MDBCardText>
+                  <textarea class="col-md-10 description" spellcheck="false" data-ms-editor="true"></textarea>
+                  <button class="btn saveBtn col-md-10"><MDBBtn>Save</MDBBtn><i class="fas fa-save"></i></button>
+                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"></i>
                   </MDBCol>
                 </MDBRow>
                 <hr />
@@ -111,7 +123,11 @@ const ProfilePage = () => {
                     <MDBCardText>Mobile</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text-muted">(098) 765-4321</MDBCardText>
+                  <textarea class="col-md-10 description" spellcheck="false" data-ms-editor="true"></textarea>
+                  <button class="btn saveBtn col-md-10"><MDBBtn>Save</MDBBtn><i class="fas fa-save"></i></button>
+                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"></i>
                   </MDBCol>
                 </MDBRow>
                 <hr />
@@ -120,7 +136,11 @@ const ProfilePage = () => {
                     <MDBCardText>Address</MDBCardText>
                   </MDBCol>
                   <MDBCol sm="9">
-                    <MDBCardText className="text">Bay Area, San Francisco, CA</MDBCardText>
+                  <textarea class="col-md-10 description" spellcheck="false" data-ms-editor="true"></textarea>
+                  <button class="btn saveBtn col-md-10"><MDBBtn>Save</MDBBtn><i class="fas fa-save"></i></button>
+                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"></i>
                   </MDBCol>
                 </MDBRow>
               </MDBCardBody>
