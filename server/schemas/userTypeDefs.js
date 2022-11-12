@@ -7,7 +7,7 @@ type Employer {
     employerPassword: String
     employerDescription: String
     employerLocation: String
-    jobs:Schema.type.String
+
   }
   type User {
     _userId: ID
@@ -22,11 +22,11 @@ type Employer {
   }
   type Query {
     employers:[Employer]
-    employer(employerName:String!)
+    employer(employerName:String!): Employer
     meEmployer: Employer
     users: [User]
     user(userName: String!): User
-    me: User
+    meUser: User
   }
   type Mutation {
     addUser(userName: String!, userEmail: String!, userPassword: String!, isEmployer: Boolean): Auth
