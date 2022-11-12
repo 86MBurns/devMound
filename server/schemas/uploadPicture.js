@@ -1,18 +1,29 @@
-const { Upload } = require("upload-js");
-const upload = Upload({ apiKey: "free" });
+pp.post('/upload-avatar', async (req, res) => {
+  try {
+      if(!req.files) {
+          res.send({
+              status: false,
+              message: 'No file uploaded'
+          });
+      } else {
+          //Use the name of the input field (i.e. "avatar") to retrieve the uploaded file
+          let avatar = req.files.avatar;
+          
+          //Use the mv() method to place the file in the upload directory (i.e. "uploads")
+          avatar.mv('./uploads/' + avatar.name);
 
-const MyUploadButton = () => {
-  const onFileSelected = async (event) => {
-    try {
-      const { fileUrl } = await upload.uploadFile(
-        event.target.files[0],
-        { onProgress: ({ progress }) => console.log(`${progress}% complete`) }
-      );
-      alert(`File uploaded!\n${fileUrl}`);
-    } catch (e) {
-      alert(`Error!\n${e.message}`);
-    }
+          //send response
+          res.send({
+              status: true,
+              message: 'File is uploaded',
+              data: {
+                  name: avatar.name,
+                  mimetype: avatar.mimetype,
+                  size: avatar.size
+              }
+          });
+      }
+  } catch (err) {
+      res.status(500).send(err);
   }
-
-  return <input type="file" onChange={onFileSelected} />;
-};
+});
