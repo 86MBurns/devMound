@@ -86,9 +86,8 @@ const ProfilePage = () => {
                   <MDBCol sm="9">
                   <textarea class="col-md-10 description" spellcheck="false" data-ms-editor="true"></textarea>
                   <button class="btn saveBtn col-md-10"><MDBBtn>Save</MDBBtn><i class="fas fa-save"></i></button>
-                  <i class="fas fa-save"></i>
-                  <i class="fas fa-save"></i>
-                  <i class="fas fa-save"></i>
+                  <i class="fas fa-save"> ::before</i>
+                  
                   </MDBCol>
                 </MDBRow>
                 <hr />
