@@ -1,29 +1,20 @@
-pp.post('/upload-avatar', async (req, res) => {
-  try {
-      if(!req.files) {
-          res.send({
-              status: false,
-              message: 'No file uploaded'
-          });
-      } else {
-          //Use the name of the input field (i.e. "avatar") to retrieve the uploaded file
-          let avatar = req.files.avatar;
-          
-          //Use the mv() method to place the file in the upload directory (i.e. "uploads")
-          avatar.mv('./uploads/' + avatar.name);
-
-          //send response
-          res.send({
-              status: true,
-              message: 'File is uploaded',
-              data: {
-                  name: avatar.name,
-                  mimetype: avatar.mimetype,
-                  size: avatar.size
-              }
-          });
-      }
-  } catch (err) {
-      res.status(500).send(err);
+app.post('/upload', function(req, res) {
+  let sampleFile;
+  let uploadPath;
+ 
+  if (!req.files || Object.keys(req.files).length === 0) {
+    return res.status(400).send('No files were uploaded.');
   }
+ 
+  // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
+  sampleFile = req.files.file;
+  uploadPath = __dirname + '/uploads/' + sampleFile.name;
+ 
+  // Use the mv() method to place the file somewhere on your server
+  sampleFile.mv(uploadPath, function(err) {
+    if (err)
+      return res.status(500).send(err);
+ 
+    res.send('File uploaded!');
+  });
 });
