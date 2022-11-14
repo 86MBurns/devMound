@@ -23,7 +23,7 @@ const ProfilePage = () => {
           <MDBCol>
             <MDBBreadcrumb className="bg-light rounded-3 p-3 mb-4">
               <MDBBreadcrumbItem>
-                <a href='./client/src/pages/Home.js'>Home</a>
+                <a href='/'>Home</a>
               </MDBBreadcrumbItem>
               <MDBBreadcrumbItem active>User Profile</MDBBreadcrumbItem>
             </MDBBreadcrumb>
@@ -86,7 +86,7 @@ const ProfilePage = () => {
                   <MDBCol sm="9">
                   <textarea class="col-md-10 description" spellcheck="false" data-ms-editor="true"></textarea>
                   <button class="btn saveBtn col-md-10"><MDBBtn>Save</MDBBtn><i class="fas fa-save"></i></button>
-                  <i class="fas fa-save"> ::before</i>
+                  <i class="fas fa-save"> </i>
                   
                   </MDBCol>
                 </MDBRow>
