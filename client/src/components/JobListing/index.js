@@ -42,7 +42,7 @@ const JobListingCard = () => {
                     </MDBRipple>
                     </MDBCol>
                     <MDBCol md="6">
-                    <h5>Quant trident shirts</h5>
+                    <h5>"Microsoft "</h5>
                     <div className="d-flex flex-row">
                         <div className="text-danger mb-1 me-2">
                         <MDBIcon fas icon="star" />
@@ -50,33 +50,29 @@ const JobListingCard = () => {
                         <MDBIcon fas icon="star" />
                         <MDBIcon fas icon="star" />
                         </div>
-                        <span>310</span>
+                        <span>Cloud Networking Engineer: Intern Opportunities for University Graduates</span>
                     </div>
                     <div className="mt-1 mb-0 text-muted small">
-                        <span>100% cotton</span>
+                        <span>Internship for Cloud Engineeringn.</span>
                         <span className="text-primary"> • </span>
-                        <span>Light weight</span>
+                        <span>Pursuing a bachelor’s degree in Electrical Engineering, Optical Engineering, Computer Science, Engineering, Information Technology, or related field. OR technical experience in network design, development, or automation Must have at least one additional</span>
                         <span className="text-primary"> • </span>
                         <span>
-                        Best finish
+                        Develops knowledge of network technologies to draw insights that aid in network design, implementation, and operation. Assists in the design of reliable, scalable, and high-performance network features or components with guidance from other engineers. 
                         <br />
                         </span>
                     </div>
                     <div className="mb-2 text-muted small">
-                        <span>Unique design</span>
+                        <span></span>
                         <span className="text-primary"> • </span>
-                        <span>For men</span>
+                        <span></span>
                         <span className="text-primary"> • </span>
                         <span>
-                        Casual
                         <br />
                         </span>
                     </div>
                     <p className="text-truncate mb-4 mb-md-0">
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in some
-                        form, by injected humour, or randomised words which don't
-                        look even slightly believable.
+                        
                     </p>
                     </MDBCol>
                     <MDBCol
@@ -85,18 +81,18 @@ const JobListingCard = () => {
                     className="border-sm-start-none border-start"
                     >
                     <div className="d-flex flex-row align-items-center mb-1">
-                        <h4 className="mb-1 me-1">$13.99</h4>
+                        <h4 className="mb-1 me-1">$70-100K a year</h4>
                         <span className="text-danger">
-                        <s>$20.99</s>
+                        <s></s>
                         </span>
                     </div>
-                    <h6 className="text-success">Free shipping</h6>
+                    <h6 className="text-success"></h6>
                     <div className="d-flex flex-column mt-4">
                         <MDBBtn color="primary" size="sm">
-                        Details
+                        Apply
                         </MDBBtn>
                         <MDBBtn outline color="primary" size="sm" className="mt-2">
-                        Add to wish list
+                       Share
                         </MDBBtn>
                     </div>
                     </MDBCol>
@@ -105,7 +101,11 @@ const JobListingCard = () => {
             </MDBCard>
         </MDBCol>
     </MDBRow>
-    )
+    
+    )   
 }
+
+
+
 
 export default JobListingCard;
