@@ -19,11 +19,12 @@ const Home = () => {
         <div className="col-12 col-md-8 mb-3">
           {/* {loading ? (
             <div>Loading...</div>
-          ) : (
+          ) : (fsdfldkffd
             "Something here"
           )} */}
         </div>
       </div>
+      <div>whats up</div>
     </main>
   );
 };
