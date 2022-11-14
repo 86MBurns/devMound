@@ -25,5 +25,8 @@
   "homepage": "https://github.com/FrankFrackle/devMound#readme",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "express-fileupload": "^1.4.0"
   }
 }
