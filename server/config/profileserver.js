@@ -5,7 +5,7 @@ const app = express();
 // default options
 app.use(fileUpload());
  
-app.get('/',(req,res) => {
+app.get('/home',(req,res) => {
     res.sendFile(__dirname + "/index.html")
 })
  
