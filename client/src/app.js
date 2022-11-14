@@ -16,7 +16,7 @@ import Login from './pages/Login';
 import ProfilePage from './pages/Profile';
 
 import Header from './components/Header/newHeader'
-import Footer from './components/Footer/footer'
+// import Footer from './components/Footer/footer'
 
 
 // Construct our main GraphQL API endpoint
@@ -70,7 +70,7 @@ function App() {
 
                         </Routes>
                     </div>
-                    <Footer />
+                    {/* <Footer /> */}
                 </div>
             </Router>
         </ApolloProvider>
