@@ -52,7 +52,7 @@ function App() {
                     <div className="container">
                         <Routes>
                             <Route
-                            path="/"
+                            path="/home"
                             element={<Home />}
                             />
                             <Route 
