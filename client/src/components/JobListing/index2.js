@@ -29,7 +29,7 @@ const JobListingCard2 = () => {
                         className="bg-image rounded hover-zoom hover-overlay"
                     >
                         <MDBCardImage
-                        src="client\public\images\generic-code.jpg"
+                        src="client/public/images/generic-code.jpg"
                         fluid
                         className="w-100"
                         />

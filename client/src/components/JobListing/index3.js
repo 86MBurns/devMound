@@ -29,7 +29,7 @@ const JobListingCard3 = () => {
                         className="bg-image rounded hover-zoom hover-overlay"
                     >
                         <MDBCardImage
-                        src="client\public\images\generic-code.jpg"
+                        src="./assets/css/images/tesla_blog.jpg"
                         fluid
                         className="w-100"
                         />
