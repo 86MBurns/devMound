@@ -14,7 +14,7 @@ import {
   MDBIcon,
 } from 'mdb-react-ui-kit';
 
-const JobListingCard = () => {
+const JobListingCard3 = () => {
 
     return(
     <MDBRow className="justify-content-center mb-0">
@@ -42,7 +42,7 @@ const JobListingCard = () => {
                     </MDBRipple>
                     </MDBCol>
                     <MDBCol md="6">
-                    <h5>"Microsoft "</h5>
+                    <h5>"Tesla "</h5>
                     <div className="d-flex flex-row">
                         <div className="text-danger mb-1 me-2">
                         <MDBIcon fas icon="star" />
@@ -50,15 +50,15 @@ const JobListingCard = () => {
                         <MDBIcon fas icon="star" />
                         <MDBIcon fas icon="star" />
                         </div>
-                        <span>Cloud Networking Engineer: Intern Opportunities for University Graduates</span>
+                        <span>Software Engineer, Linux Update Systems</span>
                     </div>
                     <div className="mt-1 mb-0 text-muted small">
                         <span>Internship for Cloud Engineeringn.</span>
                         <span className="text-primary"> • </span>
-                        <span>Pursuing a bachelor's degree in Electrical Engineering, Optical Engineering, Computer Science, Engineering, Information Technology, or related field. OR technical experience in network design, development, or automation Must have at least one additional</span>
+                        <span>Qualified in EE/CE/CS, or the equivalent in experience with evidence of exceptional ability. Several years of experience working with and writing software for embedded Linux systems; experience with software/kernel updates is plus. Proficiency in C/Go Programming, experience in Python/Perl/Bash scripting. Understanding of software code signing, authenticated encryption, or other cryptographic techniques for ensuring secure software deployment. Excellent debugging and troubleshooting skills. Network programming experience with a focus on any of the following: TFTP, HTTP(s), websockets, or integrating custom TCP/IP protocols. Experience with serial, I2C, and SPI protocols is a plus.</span>
                         <span className="text-primary"> • </span>
                         <span>
-                        Develops knowledge of network technologies to draw insights that aid in network design, implementation, and operation. Assists in the design of reliable, scalable, and high-performance network features or components with guidance from other engineers. 
+                        The Update Systems teams builds and maintains the Linux services that perform the Over-the-Air (OTA) update of Tesla's vehicle and energy products spanning across both our customer and engineering fleets. In addition to infotainment and autopilot software updates, our systems orchestrate the update of a wide array of other components ranging from individual body controllers to navigation map data and video games. We work closely with several other teams to provide a fast, flexible, and reliable update platform to ensure Tesla products can improve quickly and deliver new experiences to our customers. What You’ll Do:  Deliver high reliability C/Go code for updating firmware or software components on Linux hosts or attached peripherals. Work with a variety of teams to design, develop, and integrate new software update mechanisms and flow. Troubleshoot update issues and work closely with our validation teams to build testing infrastructure for more resilient systems. Analyze fleet update metrics to find potential issues and suggest improvements.
                         <br />
                         </span>
                     </div>
@@ -81,7 +81,7 @@ const JobListingCard = () => {
                     className="border-sm-start-none border-start"
                     >
                     <div className="d-flex flex-row align-items-center mb-1">
-                        <h4 className="mb-1 me-1">$70-100K a year</h4>
+                        <h4 className="mb-1 me-1">$90-125K a year</h4>
                         <span className="text-danger">
                         <s></s>
                         </span>
@@ -108,4 +108,4 @@ const JobListingCard = () => {
 
 
 
-export default JobListingCard;
+export default JobListingCard3;
