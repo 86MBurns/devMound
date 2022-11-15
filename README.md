@@ -24,8 +24,8 @@ New devs may have trouble finding a job entering the field of web development an
 
 ## Git REPO and APP
 
-*[HEROKU](https://devmound.herokuapp.com/)
-*[GitHub](https://github.com/FrankFrackle/devMound)
+* [HEROKU](https://devmound.herokuapp.com/)
+* [GitHub](https://github.com/FrankFrackle/devMound)
 
 ## Acknowledgments
 * libraries used, useful info used in making the site, works cited
