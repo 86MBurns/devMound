@@ -22,6 +22,11 @@ New devs may have trouble finding a job entering the field of web development an
 * [Manny Sangha](https://github.com/mannysangha1)
 * [Andres Covas](https://github.com/Cinosargo22)
 
+## Git REPO and APP
+
+*[HEROKU](https://devmound.herokuapp.com/)
+*[GitHub](https://github.com/FrankFrackle/devMound)
+
 ## Acknowledgments
 * libraries used, useful info used in making the site, works cited
 * [simple-timeline used for boilerplate and examples](https://github.com/ac524/simple-timeline/tree/boilerplate)
